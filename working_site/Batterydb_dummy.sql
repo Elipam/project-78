@@ -1,6 +1,6 @@
 drop user if exists 'u122296p140383_u122296p140383'@'localhost';
 
-CREATE USER 'u122296p140383_u122296p140383'@'localhost' IDENTIFIED BY '2r.07cddoa|O>Cdq[ju<J."x';
+CREATE USER 'u122296p140383_u122296p140383'@'localhost' IDENTIFIED BY 'thisisaverygoodpassword';
 GRANT insert, select on * to 'u122296p140383_u122296p140383'@'localhost';
 
 drop DATABASE if exists  u122296p140383_battery;

@@ -16,6 +16,6 @@
     // set database username
     $username = "u122296p140383_u122296p140383";
     // set database password
-    $password = "2r.07cddoa|O>Cdq[ju<J.\"x";
+    $password = "thisisaverygoodpassword";
 
 ?>
