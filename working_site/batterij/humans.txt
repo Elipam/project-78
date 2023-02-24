@@ -1,0 +1,31 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Developer: Ahmet Oral
+    From: The Netherlands
+    
+    Developer: Thijs Dregmans
+    From: The Netherlands
+
+    Developer: Prashant Chotkan
+    From: The Netherlands
+
+    Developer: Niels van Amsterdam
+    From: The Netherlands
+
+# THANKS
+
+    Special thanks to our client/owner:
+    Christiaan Tempelman
+
+    Our teachers:
+    Anne de Gier and Alexander Slaa
+
+    Lastly, we want to thank Kees for helping us with the security.
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    Apache Server Configs, jQuery, Modernizr, Normalize.css
