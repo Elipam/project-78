@@ -1,0 +1,55 @@
+<html>
+    <style>
+    div {
+    width: 500px;
+    height: 600px;
+    padding: 10px;
+    border: 5px solid gray;
+    margin: 0;
+  } 
+    </style>  
+
+    <body>
+       <h2>test website voor de websocket!</h2>
+       <p id="user-id"> voer een api key in en druk op verbinden</p>
+         <div id="messages"></div>
+         
+        <input type="text" id="api" placeholder="Type your message here">
+        <button onclick="Send()" id= "button">subscribe</button>
+
+
+        
+        <script>
+            var user = "";
+            var conn = new WebSocket('wss://ryanstestserver.nl:8443');
+            conn.onopen = function(e) {
+                console.log("Connection established!");
+            };
+
+            conn.onmessage = function(e) {
+                if (e.data.split(" ")[0] == "succesfully"){
+                    document.getElementById("messages").innerHTML = e.data + "<br>";	
+                    return;
+                }
+                document.getElementById("messages").innerHTML += "speed has been updated to" + e.data + "<br>";
+                var speed = e.data;
+                api = document.getElementById("api").value;
+                json = JSON.stringify({ "api": api, "speed": speed});
+                conn.send(json);
+            };
+            function Send() {
+                api = document.getElementById("api").value;
+                var message = "hallo"
+                var connect = true;
+                json = JSON.stringify({ "api": api, "message": message, "connect": connect});
+                
+                conn.send(json);
+            }
+            
+
+            
+            
+        </script>
+    </body>
+    
+    </html>
